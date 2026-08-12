@@ -1,0 +1,12 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Local tooling and generated output
+.DS_Store
+.venv/
+node_modules/
+dist/
+build/
+*.pdf
