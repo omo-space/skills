@@ -1,4 +1,4 @@
-[![Omo](../../assets/logo.svg)](https://omo.space) · [All Omo Skills](../../README.md)
+[![Omo](https://omo.space/logo-sweet-pastel.svg)](https://omo.space) · [All Omo workflows](https://github.com/omo-space)
 
 # Phonics Reading Error Coach
 
@@ -31,6 +31,6 @@ This is not an assessment, score, diagnosis, disability screen, or substitute fo
 
 ## Files
 
-- [SKILL.md](./SKILL.md) — the full provider-agnostic workflow contract.
-- [LICENSE](../../LICENSE) — MIT license for the single repository.
-- [.gitignore](../../.gitignore) — repository-wide local-secret and generated-file exclusions.
+- SKILL.md — the full provider-agnostic workflow contract.
+- LICENSE — MIT license.
+- .gitignore — basic local-secret and generated-file exclusions.

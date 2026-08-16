@@ -3,6 +3,11 @@ name: syllable-splitter-and-counter
 description: Split a bounded list of English words into syllables and return counts with explicit dialect and ambiguity notes.
 ---
 
+> **Omo open source.** This `SKILL.md` is published under the MIT License per the
+> [Omo open-source policy](https://github.com/omo-space/skills/blob/main/POLICY.md). Download and reuse it freely; to run it
+> without setup, use the hosted run on [omo.space](https://omo.space) — pay per
+> run, no subscription.
+
 # Syllable Splitter and Counter
 
 Analyze a short word list using the selected English dialect and return a

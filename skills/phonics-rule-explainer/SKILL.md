@@ -3,6 +3,11 @@ name: phonics-rule-explainer
 description: Explain one reviewed English phonics pattern for a selected audience and return bounded examples, exceptions, and uncertainty notes.
 ---
 
+> **Omo open source.** This `SKILL.md` is published under the MIT License per the
+> [Omo open-source policy](https://github.com/omo-space/skills/blob/main/POLICY.md). Download and reuse it freely; to run it
+> without setup, use the hosted run on [omo.space](https://omo.space) — pay per
+> run, no subscription.
+
 # Phonics Rule Explainer
 
 Create a concise, audience-appropriate explanation of one reviewed phonics

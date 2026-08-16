@@ -1,0 +1,20 @@
+{
+  "slug": "decodable-sentence-creator",
+  "name": "Decodable Sentence Generator",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`phonics_patterns`: 1-6 reviewed pattern identifiers.",
+    "`num_sentences`: integer from 1 through 5.",
+    "`sentence_length`: `short`, `medium`, or `long`.",
+    "`include_sight_words`: boolean.",
+    "`dialect`: `en-US`, `en-GB`, or `en-AU`."
+  ],
+  "outputs": [
+    "Return one JSON object with `run_id`, `status`, `workflow_version`, `sentences`, `coverage`, `warnings`, and measured `usage`. Each sentence has `text`, `target_words`, and `sight_…"
+  ],
+  "source_sha256": "1d807c5cddded25940dd5f7bffc1975e4ef1ff63206c7169720c7dacd243d311",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

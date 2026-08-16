@@ -1,0 +1,18 @@
+{
+  "slug": "syllable-splitter-and-counter",
+  "name": "Syllable Splitter and Counter",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`words`: 1-30 English words, each 1-80 characters.",
+    "`dialect`: `en-US`, `en-GB`, or `en-AU`.",
+    "`notation`: `hyphen` or `dots`."
+  ],
+  "outputs": [
+    "Return one JSON object with `run_id`, `status`, `workflow_version`, `items`, `warnings`, and measured `usage`. Each item has `word`, `syllabified`, `syllable_count`, and optional `…"
+  ],
+  "source_sha256": "be436a87da95cecc4c11dc38d372c58dba0736dc85046180879a0964ae85332d",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

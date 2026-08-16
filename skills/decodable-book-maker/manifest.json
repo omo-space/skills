@@ -1,0 +1,22 @@
+{
+  "slug": "decodable-book-maker",
+  "name": "Decodable Book Maker",
+  "version": "1.0.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.99,
+  "inputs": [
+    "`phonics_stage` is one of five reviewed cumulative stages: short-a CVC;",
+    "`theme` is inspiration for the plot, not permission to introduce vocabulary",
+    "`child_name` is optional. When supplied, it is the sole special-word"
+  ],
+  "outputs": [
+    "`title`, `book`, and `page_plan` form the reviewed book source.",
+    "`decodability` records the en-US dialect, selected stage, audited word counts,",
+    "`artifact` describes a real PDF with byte count, SHA-256, and page count.",
+    "`artifact_url` is a short-lived signed download path for the PDF.",
+    "`usage` reports provider/model calls, tokens, and estimated provider cost."
+  ],
+  "source_sha256": "d01ae61d577c1555b1b32761b15ea7c08c4c5fe1203756d18132a77bcb8785d7",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

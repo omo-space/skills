@@ -1,0 +1,18 @@
+{
+  "slug": "phoneme-counter",
+  "name": "Phoneme Counter",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`word`: one English word, 1-80 characters.",
+    "`dialect`: `en-US`, `en-GB`, or `en-AU`.",
+    "`show_transcription`: boolean."
+  ],
+  "outputs": [
+    "Return one JSON object with `run_id`, `status`, `workflow_version`, `word`, `dialect`, `phonemes`, `phoneme_count`, optional `ipa`, `uncertainty`, and measured `usage`."
+  ],
+  "source_sha256": "d4940255bbaf06de0d98a305bd2fb5f8113222f92c296321b5a87c421f3c22e1",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

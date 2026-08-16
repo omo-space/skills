@@ -1,0 +1,14 @@
+{
+  "slug": "facebook-ads-copywriter",
+  "name": "Facebook Ads Copywriter",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [],
+  "outputs": [
+    "Return one JSON object with `campaign_summary`, exactly three `ads`, `testing_notes`, and `compliance_notes`. Each ad has `angle`, `primary_text`, `headline`, `description`, and `c…"
+  ],
+  "source_sha256": "05784243615a7403e8edc6f4a4929702ff1b1aad35cec0f96637ed48080a9952",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

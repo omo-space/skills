@@ -1,0 +1,21 @@
+{
+  "slug": "phonics-reading-error-coach",
+  "name": "Reading Error Coach",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`misread_word`: the student's spoken or written attempt, 1-80 characters.",
+    "`target_word`: the printed target word, 1-80 characters.",
+    "`dialect`: `en-US`, `en-GB`, or `en-AU`.",
+    "`learner_stage`: `early`, `developing`, or `consolidating`.",
+    "`detail`: `brief` or `teacher`.",
+    "`include_practice`: boolean."
+  ],
+  "outputs": [
+    "Return one JSON object with `run_id`, `status`, `workflow_version`, `observation`, `possible_confusions`, `explanation`, `practice_suggestions`, `uncertainty`, `teacher_review_requ…"
+  ],
+  "source_sha256": "68338486b0efc7c92173af7c2217666334e5925f2c33d640f45509816fa6d982",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

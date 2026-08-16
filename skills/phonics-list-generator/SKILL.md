@@ -3,6 +3,11 @@ name: phonics-list-generator
 description: Generate a bounded, dialect-aware phonics word list for selected target patterns, topic, and learner difficulty.
 ---
 
+> **Omo open source.** This `SKILL.md` is published under the MIT License per the
+> [Omo open-source policy](https://github.com/omo-space/skills/blob/main/POLICY.md). Download and reuse it freely; to run it
+> without setup, use the hosted run on [omo.space](https://omo.space) — pay per
+> run, no subscription.
+
 # Phonics Word List Generator
 
 Create a teacher-reviewable list of words that visibly contain the requested

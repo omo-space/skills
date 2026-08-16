@@ -1,0 +1,20 @@
+{
+  "slug": "phonics-list-generator",
+  "name": "Phonics Word List Generator",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`phonemes`: 1-8 reviewed target strings.",
+    "`topic`: optional theme, 1-120 characters.",
+    "`difficulty_level`: `beginner`, `intermediate`, or `advanced`.",
+    "`dialect`: `en-US`, `en-GB`, or `en-AU`.",
+    "`word_count`: integer from 5 through 30."
+  ],
+  "outputs": [
+    "Return one JSON object with `run_id`, `status`, `workflow_version`, `words`, `coverage`, `warnings`, and measured `usage`. Each word has `word`, `matched_phonemes`, `target_positio…"
+  ],
+  "source_sha256": "a3731f4ef18ad0820d164d2c578af481f6d65dd95d2075d5b3407b90574bec80",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

@@ -3,6 +3,11 @@ name: decodable-sentence-creator
 description: Generate a small set of child-safe sentences constrained by selected phonics patterns, length, dialect, and sight-word policy.
 ---
 
+> **Omo open source.** This `SKILL.md` is published under the MIT License per the
+> [Omo open-source policy](https://github.com/omo-space/skills/blob/main/POLICY.md). Download and reuse it freely; to run it
+> without setup, use the hosted run on [omo.space](https://omo.space) — pay per
+> run, no subscription.
+
 # Decodable Sentence Creator
 
 Create teacher-reviewable practice sentences that emphasize declared phonics

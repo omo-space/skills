@@ -1,0 +1,24 @@
+{
+  "slug": "woven-relationship-book-maker",
+  "name": "Woven Relationship Book Maker",
+  "version": "0.3.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.4,
+  "inputs": [
+    "`chat_zip`: a WhatsApp export ZIP (base64) — the archive is parsed as hostile",
+    "`how_you_met`: a factual account of the beginning of the relationship.",
+    "`favorite_moments`: milestones and memories the story should include.",
+    "`inside_jokes`: favorite phrases, jokes, or small details to weave in without",
+    "`style`: `warm`, `playful`, or `poetic`.",
+    "`length`: `short` (roughly three chapters) or `long` (roughly six)."
+  ],
+  "outputs": [
+    "`artifact_url` — a signed link to the finished PDF keepsake.",
+    "`book` — the chaptered relationship story in Markdown.",
+    "`page_plan` — the PDF-ready keepsake page plan retained in the result.",
+    "`title`, `run_id`, and measured `usage` accompany every run."
+  ],
+  "source_sha256": "2d38f79d3b7f30072b24181d8ff282b087a62e780da8c66f0fbbb29c1b9e16c4",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

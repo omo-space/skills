@@ -1,0 +1,22 @@
+{
+  "slug": "japanese-style-story-video",
+  "name": "Japanese Style Story Video",
+  "version": "0.2.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`audio`: the allowlisted identifier `sample-demello-10s` for the hosted lane.",
+    "`style`: `sumi-e`; no other visual style is accepted by this release.",
+    "`duration`: `10`; it describes the bundled sample rather than asking the"
+  ],
+  "outputs": [
+    "one 1080×1920, 30 fps, H.264/AAC MP4 containing the original sample audio;",
+    "the reviewed transcript and semantic frame brief;",
+    "a frame manifest and visual contact sheet;",
+    "exact run-scoped object keys, byte counts, SHA-256 digests, and short-lived",
+    "measured frame counts and disclosed provider/fallback usage."
+  ],
+  "source_sha256": "e63364461342aa4d29e204db09c5fcc0024d8b45d050c1d7970e1b5301cb32d4",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

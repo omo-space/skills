@@ -1,0 +1,19 @@
+{
+  "slug": "grapheme-to-phoneme-converter",
+  "name": "Grapheme to Phoneme Converter",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`text`: one English word or grapheme, 1-80 characters.",
+    "`dialect`: `en-US`, `en-GB`, or `en-AU`.",
+    "`include_rules_explanation`: boolean.",
+    "`include_example_words`: boolean."
+  ],
+  "outputs": [
+    "Return one JSON object with `run_id`, `status`, `workflow_version`, `input`, `dialect`, `phonemes`, optional `ipa`, optional `rules_explanation`, `example_words`, `uncertainty`, an…"
+  ],
+  "source_sha256": "60c3425869a689d7c7c2ce988e41f38281dedc6cb9093c36f5b4481049e27e15",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

@@ -3,6 +3,11 @@ name: phoneme-counter
 description: Estimate the phoneme count and optional IPA transcription for one English word in a declared dialect, with uncertainty made explicit.
 ---
 
+> **Omo open source.** This `SKILL.md` is published under the MIT License per the
+> [Omo open-source policy](https://github.com/omo-space/skills/blob/main/POLICY.md). Download and reuse it freely; to run it
+> without setup, use the hosted run on [omo.space](https://omo.space) — pay per
+> run, no subscription.
+
 # Phoneme Counter
 
 Return a cautious phoneme segmentation for one English word.

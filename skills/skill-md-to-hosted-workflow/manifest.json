@@ -1,0 +1,18 @@
+{
+  "slug": "skill-md-to-hosted-workflow",
+  "name": "skill-md-to-hosted-workflow",
+  "version": "1.0.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 5.0,
+  "inputs": [
+    "`skill_md`: the complete Markdown document, from 1 through 20,000 characters.",
+    "`name`: optional display-name hint; it cannot change source identity.",
+    "`options`: optional machine-readable schemas, fixture, and bounded token estimates."
+  ],
+  "outputs": [
+    "Return the candidate status, slug, candidate run price, compiled manifest, fixture-only test summary, and typed blockers inside an `omo.result/v1` envelope."
+  ],
+  "source_sha256": "4382d6af8da9ef010d71f4bb77ce7931abb84e60a1b51bd058f22287a6ebccdc",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

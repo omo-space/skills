@@ -3,6 +3,11 @@ name: grapheme-to-phoneme-converter
 description: Convert one English word or grapheme to a likely phoneme representation for a declared dialect, with examples and uncertainty controls.
 ---
 
+> **Omo open source.** This `SKILL.md` is published under the MIT License per the
+> [Omo open-source policy](https://github.com/omo-space/skills/blob/main/POLICY.md). Download and reuse it freely; to run it
+> without setup, use the hosted run on [omo.space](https://omo.space) — pay per
+> run, no subscription.
+
 # Grapheme to Phoneme Converter
 
 Return a cautious spelling-to-sound analysis for one bounded input.

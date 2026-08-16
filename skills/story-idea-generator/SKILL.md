@@ -3,6 +3,11 @@ name: story-idea-generator
 description: Generate a bounded set of original, child-safe story ideas from optional genre, character-count, and setting constraints.
 ---
 
+> **Omo open source.** This `SKILL.md` is published under the MIT License per the
+> [Omo open-source policy](https://github.com/omo-space/skills/blob/main/POLICY.md). Download and reuse it freely; to run it
+> without setup, use the hosted run on [omo.space](https://omo.space) — pay per
+> run, no subscription.
+
 # Story Idea Generator
 
 Create short, distinct story premises for student writing or teacher planning.

@@ -1,0 +1,20 @@
+{
+  "slug": "story-idea-generator",
+  "name": "Student Story Idea Generator",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`genre`: optional, 1-80 characters.",
+    "`num_characters`: optional integer from 1 through 10.",
+    "`setting_keywords`: optional, 1-240 characters.",
+    "`num_ideas`: integer from 1 through 10.",
+    "`age_band`: `5-7`, `8-10`, or `11-13`."
+  ],
+  "outputs": [
+    "Return one JSON object with `run_id`, `status`, `workflow_version`, `ideas`, `constraints_used`, and measured `usage`. Each idea has `title`, `premise`, and `writing_hook`."
+  ],
+  "source_sha256": "b5128859afe88376d4dc04906a3db283b30f18dff52dcef81a93e86a60a761c5",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

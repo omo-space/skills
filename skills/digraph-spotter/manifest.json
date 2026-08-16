@@ -1,0 +1,19 @@
+{
+  "slug": "digraph-spotter",
+  "name": "Digraph Spotter",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`text`: English text from 1 through 3000 characters.",
+    "`digraph_type`: `all`, `consonant`, or `vowel`.",
+    "`include_explanations`: boolean.",
+    "`dialect`: `en-US`, `en-GB`, or `en-AU`."
+  ],
+  "outputs": [
+    "Return one JSON object with `run_id`, `status`, `workflow_version`, `occurrences`, `summary`, `warnings`, and measured `usage`. Each occurrence has `text`, `word`, `start`, `end`, …"
+  ],
+  "source_sha256": "cba915c43a66f63b7f457a958c0a09b970b26f007623988892d891eaf2196c2e",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}

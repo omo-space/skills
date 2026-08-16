@@ -3,6 +3,11 @@ name: digraph-spotter
 description: Identify reviewed consonant and vowel digraphs in bounded English text and return exact spans plus cautious explanations.
 ---
 
+> **Omo open source.** This `SKILL.md` is published under the MIT License per the
+> [Omo open-source policy](https://github.com/omo-space/skills/blob/main/POLICY.md). Download and reuse it freely; to run it
+> without setup, use the hosted run on [omo.space](https://omo.space) — pay per
+> run, no subscription.
+
 # Digraph Spotter
 
 Find visible grapheme sequences that act as common digraphs in supplied text.

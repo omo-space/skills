@@ -1,0 +1,19 @@
+{
+  "slug": "phonics-rule-explainer",
+  "name": "Phonics Rule Explainer",
+  "version": "0.1.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [
+    "`phonics_rule`: one reviewed rule identifier.",
+    "`target_audience`: `early_reader`, `elementary`, or `teacher_parent`.",
+    "`num_examples`: integer from 2 through 5.",
+    "`dialect`: `en-US`, `en-GB`, or `en-AU`."
+  ],
+  "outputs": [
+    "Return one JSON object with `run_id`, `status`, `workflow_version`, `rule`, `explanation`, `examples`, `exceptions_note`, `teacher_review_required`, and measured `usage`."
+  ],
+  "source_sha256": "76fc89148d80e75321ba5d6402c701a9099555dfc9026a25be396528500c3ae5",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}
