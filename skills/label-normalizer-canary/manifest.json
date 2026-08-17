@@ -1,0 +1,12 @@
+{
+  "slug": "label-normalizer-canary",
+  "name": "Label Normalizer Canary",
+  "version": "1.0.0",
+  "license": "MIT",
+  "policy": "https://github.com/omo-space/skills/blob/main/POLICY.md",
+  "hosted_run_price_usd": 0.1,
+  "inputs": [],
+  "outputs": [],
+  "source_sha256": "eef434aa89f891bc8ee50ba1aec5dd7869eb4135012d3cc47596716ca9bb83c2",
+  "publish_mechanism": "R4 oss publish gate (research/oss-publish-spec.md)"
+}
