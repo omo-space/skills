@@ -15,12 +15,17 @@ useful, or easier to run independently.
   copyrighted characters, or private data.
 - Keep the skill's folder `README.md` in the two-door format: run it on Omo or
   run the contract yourself.
-- Update the root index and `CHANGELOG.md` when adding a skill.
+- When adding a skill, add an entry to `library.json` (category, status,
+  one-line summary), run `python3 scripts/build_index.py` to regenerate the
+  README index, and update `CHANGELOG.md`. Do not edit the index by hand.
+- Status is `hosted` only when the skill runs on omo.space today; otherwise
+  `spec`.
 
 ## Before opening a change
 
-Check that every skill folder contains both `SKILL.md` and `README.md`, that
-links resolve within the repository, and that examples do not overclaim
+Run `python3 scripts/validate.py` and make sure it prints `VERDICT PASS`. It
+checks folders, frontmatter, manifest hashes, links and the index. Also check
+that examples do not overclaim
 diagnostic, clinical, curriculum-alignment, or pronunciation certainty.
 
 Please open focused pull requests with a clear description of the workflow

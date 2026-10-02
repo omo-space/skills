@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+Library organisation. No skill contract changed.
+
+- Grouped all 103 skills into 11 categories in the README, with a one-line
+  summary and a *Run on Omo* / *Spec only* status for each. *Run on Omo* is
+  set only for the 6 skills the live site lets you run today.
+- Added `library.json` as the single place to edit category, status and summary.
+- Added `scripts/build_index.py` (generates the README index) and
+  `scripts/validate.py` (folders, frontmatter, manifest hashes, links, index).
+- Added a CI workflow that runs the validator on every push and pull request.
+- Removed the README entry for the private story maker, which had no folder.
+- Listed 7 published skills that were missing from the index.
+
+## 2026-08 releases
+
 Added 85 public PhonicsMaker workflow twins. Each is explicitly inactive and
 non-chargeable while its marketplace, runtime, model, evaluation, and pricing gates
 remain under review. The private illustrated story-maker was not changed.
@@ -19,7 +33,7 @@ remain under review. The private illustrated story-maker was not changed.
 Initial Omo Skills mega-repo release with these 12 skills:
 
 - [Phonics Worksheet Generator](skills/phonics-worksheet-generator/)
-- [Illustrated Decodable Story Maker](skills/illustrated-decodable-story-maker/)
+- Illustrated Decodable Story Maker (removed 2026-08-16; private under [POLICY.md](POLICY.md))
 - [Phonics Story Edit Studio](skills/phonics-story-edit-studio/)
 - [Phonics Reading Error Coach](skills/phonics-reading-error-coach/)
 - [Phonics Word List Generator](skills/phonics-list-generator/)
