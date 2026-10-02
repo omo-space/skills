@@ -1,0 +1,581 @@
+{
+  "$comment": "Source of truth for library grouping and status. Edit this file, then run: python3 scripts/build_index.py",
+  "status_values": {
+    "hosted": "Runnable now on omo.space (pay per run). Mirrors the live site gate in site/run.html.",
+    "spec": "Open contract. Not runnable on omo.space today."
+  },
+  "categories": [
+    {
+      "id": "phonics",
+      "title": "Phonics and word study",
+      "blurb": "Sounds, patterns, word lists and decoding."
+    },
+    {
+      "id": "reading-and-fluency",
+      "title": "Reading and fluency",
+      "blurb": "Read-aloud, fluency and comprehension practice."
+    },
+    {
+      "id": "grammar-and-vocabulary",
+      "title": "Grammar and vocabulary",
+      "blurb": "Parts of speech, mechanics and word meaning."
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "blurb": "Prompts, outlines and story starters."
+    },
+    {
+      "id": "worksheets-and-puzzles",
+      "title": "Worksheets, quizzes and puzzles",
+      "blurb": "Printable practice and answer keys."
+    },
+    {
+      "id": "games-and-activities",
+      "title": "Games and activities",
+      "blurb": "Oral and playful literacy activities."
+    },
+    {
+      "id": "planning-and-assessment",
+      "title": "Planning and assessment",
+      "blurb": "Teacher planning and progress notes."
+    },
+    {
+      "id": "subject-explainers",
+      "title": "Subject explainers",
+      "blurb": "Maths, science, history and code explanations."
+    },
+    {
+      "id": "books-and-media",
+      "title": "Books and media",
+      "blurb": "Generated books, story editing and video."
+    },
+    {
+      "id": "business-and-marketing",
+      "title": "Business and marketing",
+      "blurb": "Ad copy and customer feedback analysis."
+    },
+    {
+      "id": "builder-tools",
+      "title": "Builder tools",
+      "blurb": "Tools for people who build and host skills."
+    }
+  ],
+  "skills": {
+    "acrostic-poem-assistant": {
+      "category": "writing",
+      "status": "spec",
+      "summary": "Draft an acrostic poem from a word or name, with line ideas a student can edit."
+    },
+    "adjective-identifier": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Mark the adjectives in a passage and say which noun each one describes."
+    },
+    "alphabetical-order-checker": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Check whether a word list is in alphabetical order and give the corrected order."
+    },
+    "analogy-completer": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Complete word analogies (hot : cold :: up : ?) and explain each answer."
+    },
+    "analogy-generator": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Make a set of word analogies at a chosen level, with an answer key."
+    },
+    "antonym-suggester": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Suggest antonyms for a word, levelled for the learner, with example sentences."
+    },
+    "auditory-discrimination-practice": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Make same/different word pairs for listening practice (text only, no audio)."
+    },
+    "blend-identifier": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Find consonant blends (bl, st, spr) in words or text, with examples."
+    },
+    "capitalization-helper": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Fix capital letters in a passage and give the reason for each change."
+    },
+    "cause-effect-sentence-starter": {
+      "category": "writing",
+      "status": "spec",
+      "summary": "Give cause-and-effect sentence starters for a topic or text."
+    },
+    "character-trait-lister": {
+      "category": "writing",
+      "status": "spec",
+      "summary": "List a character's traits with evidence from the text you supply."
+    },
+    "choral-reading-text-selector": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Suggest short texts suited to choral reading, with the reason for each."
+    },
+    "cloze-passage-generator": {
+      "category": "worksheets-and-puzzles",
+      "status": "spec",
+      "summary": "Turn a passage into a cloze exercise with a word bank and answer key."
+    },
+    "code-snippet-explainer": {
+      "category": "subject-explainers",
+      "status": "spec",
+      "summary": "Explain a short code snippet line by line at the learner's level."
+    },
+    "compare-contrast-word-pairer": {
+      "category": "writing",
+      "status": "spec",
+      "summary": "Give compare/contrast transition words in pairs, with usage notes."
+    },
+    "compound-word-splitter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Split compound words into their parts and explain the meaning."
+    },
+    "contraction-tool": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Expand contractions or form them, with the rule for each."
+    },
+    "crossword-clue-generator": {
+      "category": "worksheets-and-puzzles",
+      "status": "spec",
+      "summary": "Write crossword clues for a word list, with answer lengths."
+    },
+    "customer-feedback-theme-finder": {
+      "category": "business-and-marketing",
+      "status": "hosted",
+      "summary": "Turn raw customer comments into faithful themes and practical next actions."
+    },
+    "cvc-word-creator": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Make a controlled list of consonant-vowel-consonant words for a target vowel."
+    },
+    "debate-topic-generator": {
+      "category": "writing",
+      "status": "spec",
+      "summary": "Suggest debate topics matched to age and complexity."
+    },
+    "decodable-book-maker": {
+      "category": "books-and-media",
+      "status": "spec",
+      "summary": "Write a decodable phonics story for one phonics stage and deliver it as a PDF book."
+    },
+    "decodable-sentence-creator": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Create child-safe sentences constrained by your target phonics patterns, length, dialect, and sight words."
+    },
+    "definition-lookup": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Give a child-friendly definition and an example sentence for a word."
+    },
+    "digraph-spotter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Find consonant and vowel digraphs in a passage and see exactly where each one appears."
+    },
+    "echo-reading-prompter": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Make echo-reading prompts: a teacher line, then the student repeat."
+    },
+    "elkonin-box-assistant": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Break words into sound boxes (Elkonin boxes) for segmenting practice."
+    },
+    "essay-outline-generator": {
+      "category": "writing",
+      "status": "spec",
+      "summary": "Build a paragraph-by-paragraph outline for an essay topic."
+    },
+    "facebook-ads-copywriter": {
+      "category": "business-and-marketing",
+      "status": "hosted",
+      "summary": "Turn verified product facts into three launch-ready Facebook ad variants."
+    },
+    "fact-opinion-sorter": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Sort statements into fact or opinion, with the clue for each."
+    },
+    "figurative-language-identifier": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Find similes, metaphors and idioms in a passage and label each one."
+    },
+    "fill-in-the-blanks-generator": {
+      "category": "worksheets-and-puzzles",
+      "status": "spec",
+      "summary": "Make a fill-in-the-blanks exercise from a passage, with an answer key."
+    },
+    "final-sound-sorter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Group words by their final sound."
+    },
+    "grapheme-to-phoneme-converter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Map an English grapheme or word to likely phonemes for the dialect you choose."
+    },
+    "high-frequency-word-checker": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Mark the high-frequency (sight) words in a text and report coverage."
+    },
+    "historical-event-explainer": {
+      "category": "subject-explainers",
+      "status": "spec",
+      "summary": "Explain a historical event at the learner's level."
+    },
+    "homograph-helper": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Show the meanings and pronunciations of homographs (read/read), with examples."
+    },
+    "homophone-helper": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Explain homophones (there/their/they're) with meanings and examples."
+    },
+    "initial-sound-sorter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Group words by their first sound."
+    },
+    "japanese-style-story-video": {
+      "category": "books-and-media",
+      "status": "hosted",
+      "summary": "Turn short audio into a vertical sumi-e drawing animation."
+    },
+    "joke-generator-phonics-based": {
+      "category": "games-and-activities",
+      "status": "spec",
+      "summary": "Write child-safe jokes and riddles that practise a phonics pattern."
+    },
+    "label-normalizer-canary": {
+      "category": "builder-tools",
+      "status": "spec",
+      "summary": "Deterministic test skill used to prove the hosting pipeline end to end. Not a teaching tool."
+    },
+    "language-experience-story-starter": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Turn a shared class experience into a starter text, with teacher tips."
+    },
+    "learning-plan-outline-creator": {
+      "category": "planning-and-assessment",
+      "status": "spec",
+      "summary": "Outline a sequenced learning plan for a topic and time frame."
+    },
+    "letter-sound-matcher": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Match letters to their common sounds, with example words."
+    },
+    "literacy-game-idea-suggester": {
+      "category": "games-and-activities",
+      "status": "spec",
+      "summary": "Suggest literacy games for a skill and group size, with simple rules."
+    },
+    "math-word-problem-explainer": {
+      "category": "subject-explainers",
+      "status": "spec",
+      "summary": "Explain how to solve a maths word problem step by step."
+    },
+    "minimal-pairs-generator": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Make minimal pairs (ship/sip) for a sound contrast."
+    },
+    "missing-letter-finder": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Make missing-letter puzzles from a word list, with answers."
+    },
+    "multiple-choice-quiz-generator": {
+      "category": "worksheets-and-puzzles",
+      "status": "spec",
+      "summary": "Write multiple-choice questions on a text or topic, with an answer key."
+    },
+    "noun-finder": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Mark the nouns in a passage and list them by type."
+    },
+    "onset-rime-splitter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Split words into onset and rime (c + at), with a short explanation."
+    },
+    "open-closed-syllable-identifier": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Split words into syllables and label each syllable open or closed."
+    },
+    "past-tense-verb-converter": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Change verbs to past tense and give the rule, including irregular forms."
+    },
+    "phoneme-blending-practice": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Make blending drills: say the sounds, then reveal the word."
+    },
+    "phoneme-counter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Estimate the phonemes in an English word, with an optional transcription and clear uncertainty notes."
+    },
+    "phoneme-segmentation-practice": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Make segmenting drills: show the word, then reveal its sounds."
+    },
+    "phonics-list-generator": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Build a dialect-aware phonics word list around the target patterns, topic, and learner level you choose."
+    },
+    "phonics-reading-error-coach": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Compare an attempted word with its target and get a cautious phonics hypothesis plus practice ideas."
+    },
+    "phonics-rule-explainer": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Explain one English phonics pattern with level-appropriate examples, exceptions, and uncertainty notes."
+    },
+    "phonics-story-edit-studio": {
+      "category": "books-and-media",
+      "status": "spec",
+      "summary": "Apply text, layout, highlighting or title changes to a PhonicsMaker story and get a new versioned PDF."
+    },
+    "phonics-story-editor": {
+      "category": "books-and-media",
+      "status": "spec",
+      "summary": "Edit an existing story with plain commands and get a new PDF version."
+    },
+    "phonics-worksheet-generator": {
+      "category": "phonics",
+      "status": "hosted",
+      "summary": "Create a print-ready phonics worksheet and answer key from a bounded teaching brief."
+    },
+    "plural-noun-generator": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Form plurals and explain the rule, including irregular nouns."
+    },
+    "predictable-text-generator": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Write a short repetitive, predictable text for early readers."
+    },
+    "prefix-suffix-identifier": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Mark prefixes and suffixes in words and give their meanings."
+    },
+    "progress-monitoring-note-taker": {
+      "category": "planning-and-assessment",
+      "status": "spec",
+      "summary": "Turn quick observations into a structured progress note for a learner."
+    },
+    "pronunciation-guide": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Give a pronunciation respelling and syllable break for a word (text only, no audio)."
+    },
+    "punctuation-placer": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Add missing punctuation to a sentence and explain each mark."
+    },
+    "r-controlled-vowel-spotter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Find r-controlled vowels (ar, er, ir, or, ur) in words or text."
+    },
+    "read-aloud-text-player": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Prepare a read-aloud script with pacing and pause marks (text only, no audio)."
+    },
+    "reading-fluency-timer": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Prepare a timed fluency passage with instructions and a words-per-minute target."
+    },
+    "rhyming-words-generator": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "List rhyming words for a word or word family."
+    },
+    "root-word-extractor": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Find the root word and affixes in a word, with meanings."
+    },
+    "science-concept-explainer": {
+      "category": "subject-explainers",
+      "status": "spec",
+      "summary": "Explain a science concept at the learner's level, with an example."
+    },
+    "sentence-complexity-scorer": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Score how complex a sentence is and give the reasons."
+    },
+    "sentence-fragment-detector": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Flag sentence fragments and run-ons, with a fix for each."
+    },
+    "sentence-unscrambler": {
+      "category": "worksheets-and-puzzles",
+      "status": "spec",
+      "summary": "Make scrambled-sentence puzzles with answers."
+    },
+    "setting-describer-ideas": {
+      "category": "writing",
+      "status": "spec",
+      "summary": "Give sensory detail ideas to describe a story setting."
+    },
+    "sight-word-flashcard-maker": {
+      "category": "worksheets-and-puzzles",
+      "status": "spec",
+      "summary": "Plan sight-word flashcards: the word, a sentence and a picture idea."
+    },
+    "silent-letter-highlighter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Mark silent letters in words or text."
+    },
+    "simplified-text-rewriter": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Rewrite a passage at a lower reading level and keep the meaning."
+    },
+    "skill-md-to-hosted-workflow": {
+      "category": "builder-tools",
+      "status": "hosted",
+      "summary": "Compile a SKILL.md into a fixture-tested, canonically priced hosting candidate."
+    },
+    "sound-wall-categorizer": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Place sounds on a sound wall by category, with example words."
+    },
+    "spelling-bee-practice-list": {
+      "category": "worksheets-and-puzzles",
+      "status": "spec",
+      "summary": "Make a levelled spelling list with a context sentence for each word."
+    },
+    "story-idea-generator": {
+      "category": "writing",
+      "status": "spec",
+      "summary": "Generate original, child-safe story ideas around the genre, setting, and cast you choose."
+    },
+    "story-sequence-suggester": {
+      "category": "reading-and-fluency",
+      "status": "spec",
+      "summary": "Put story events in order and explain the sequence."
+    },
+    "syllable-splitter-and-counter": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Split a word list into syllables and counts, with dialect differences and uncertain cases made clear."
+    },
+    "synonym-suggester": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Suggest synonyms for a word, levelled for the learner, with examples."
+    },
+    "text-summarizer": {
+      "category": "writing",
+      "status": "spec",
+      "summary": "Summarise a passage to a set length."
+    },
+    "tongue-twister-creator": {
+      "category": "games-and-activities",
+      "status": "spec",
+      "summary": "Write tongue twisters that practise a target sound."
+    },
+    "trigraph-detector": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Find trigraphs (tch, igh, dge) in words or text."
+    },
+    "verb-spotter": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Mark the verbs in a passage and label their type."
+    },
+    "vocabulary-enhancer": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Suggest stronger word choices for a piece of writing, at the writer's level."
+    },
+    "vocabulary-tier-sorter": {
+      "category": "grammar-and-vocabulary",
+      "status": "spec",
+      "summary": "Sort words into vocabulary tiers 1, 2 and 3, with short definitions."
+    },
+    "vowel-sound-categorizer": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Group words by vowel sound (short, long, other), with examples."
+    },
+    "vowel-team-finder": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Find vowel teams (ai, ee, oa) in words or text, with sound notes."
+    },
+    "word-chain-game-starter": {
+      "category": "games-and-activities",
+      "status": "spec",
+      "summary": "Start a word-chain game and list valid next words."
+    },
+    "word-family-builder": {
+      "category": "phonics",
+      "status": "spec",
+      "summary": "Build a word family around a rime (-at, -ig), with meanings and sentences."
+    },
+    "word-ladder-creator": {
+      "category": "games-and-activities",
+      "status": "spec",
+      "summary": "Make a word ladder that changes one letter per step, with an answer key."
+    },
+    "word-search-puzzle-maker": {
+      "category": "worksheets-and-puzzles",
+      "status": "spec",
+      "summary": "Plan a word-search puzzle: the word list and the grid layout."
+    },
+    "word-shape-puzzle-generator": {
+      "category": "worksheets-and-puzzles",
+      "status": "spec",
+      "summary": "Make word-shape (configuration) puzzles with answers."
+    },
+    "woven-relationship-book-maker": {
+      "category": "books-and-media",
+      "status": "hosted",
+      "summary": "Turn your love story into a beautiful keepsake book."
+    }
+  }
+}

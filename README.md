@@ -1,132 +1,236 @@
 ![Omo](assets/logo.svg)
 
-# Omo Skills — proven AI workflows, run for cents or self-host.
+# Omo Skills
 
-Omo Skills is the canonical open-source library of provider-agnostic AI
-workflow contracts from Omo. Each skill is a focused `SKILL.md`: a practical
-description of inputs, safeguards, workflow behavior, and outputs that can be
-run through Omo or wired into your own stack.
+Open-source AI workflow skills for teachers, tutors and small teams. Each skill
+is one `SKILL.md` file: a plain contract that says what goes in, what checks
+run, and what comes out. MIT licensed.
 
-## Two doors
+## How to use a skill
 
-**Run it on Omo.** Open [omo.space](https://omo.space), choose a workflow, and
-run it for cents per execution. Omo handles provider access, validation,
-artifacts, updates, and billing.
+1. **Run it on Omo.** Skills marked *Run on Omo* are live on
+   [omo.space](https://omo.space). You pay per run. There is no subscription and
+   no setup.
+2. **Run it yourself.** Copy the skill folder into any agent that reads
+   `SKILL.md` files (Hermes Agent, Claude Code, Codex and others), or implement
+   the contract in your own stack. You supply the model keys and the checks.
 
-**Run it yourself.** Take the `SKILL.md` from any folder, bring the API keys
-and infrastructure described by its self-hosting notes, and implement the
-contract in your own environment. The files here are honest workflow
-specifications, not claims that a complete standalone service or renderer is
-included.
+A skill marked *Spec only* is an open contract that does not run on omo.space
+today. It is a good starting point, but test it before you rely on it.
 
-## Skills
+Every result is a draft for a person to review. No skill here claims diagnosis,
+curriculum alignment or classroom approval.
 
-| Skill | Folder |
-| --- | --- |
-| [Phonics Worksheet Generator](skills/phonics-worksheet-generator/) | [`skills/phonics-worksheet-generator`](skills/phonics-worksheet-generator/) |
-| [Illustrated Decodable Story Maker](skills/illustrated-decodable-story-maker/) | [`skills/illustrated-decodable-story-maker`](skills/illustrated-decodable-story-maker/) |
-| [Phonics Story Edit Studio](skills/phonics-story-edit-studio/) | [`skills/phonics-story-edit-studio`](skills/phonics-story-edit-studio/) |
-| [Phonics Reading Error Coach](skills/phonics-reading-error-coach/) | [`skills/phonics-reading-error-coach`](skills/phonics-reading-error-coach/) |
-| [Phonics Word List Generator](skills/phonics-list-generator/) | [`skills/phonics-list-generator`](skills/phonics-list-generator/) |
-| [Syllable Splitter and Counter](skills/syllable-splitter-and-counter/) | [`skills/syllable-splitter-and-counter`](skills/syllable-splitter-and-counter/) |
-| [Story Idea Generator](skills/story-idea-generator/) | [`skills/story-idea-generator`](skills/story-idea-generator/) |
-| [Digraph Spotter](skills/digraph-spotter/) | [`skills/digraph-spotter`](skills/digraph-spotter/) |
-| [Phoneme Counter](skills/phoneme-counter/) | [`skills/phoneme-counter`](skills/phoneme-counter/) |
-| [Decodable Sentence Creator](skills/decodable-sentence-creator/) | [`skills/decodable-sentence-creator`](skills/decodable-sentence-creator/) |
-| [Phonics Rule Explainer](skills/phonics-rule-explainer/) | [`skills/phonics-rule-explainer`](skills/phonics-rule-explainer/) |
-| [Grapheme to Phoneme Converter](skills/grapheme-to-phoneme-converter/) | [`skills/grapheme-to-phoneme-converter`](skills/grapheme-to-phoneme-converter/) |
-| [Acrostic Poem Assistant](skills/acrostic-poem-assistant/) | [`skills/acrostic-poem-assistant`](skills/acrostic-poem-assistant/) |
-| [Adjective Identifier](skills/adjective-identifier/) | [`skills/adjective-identifier`](skills/adjective-identifier/) |
-| [Alphabetical Order Checker](skills/alphabetical-order-checker/) | [`skills/alphabetical-order-checker`](skills/alphabetical-order-checker/) |
-| [Analogy Completer](skills/analogy-completer/) | [`skills/analogy-completer`](skills/analogy-completer/) |
-| [Analogy Generator](skills/analogy-generator/) | [`skills/analogy-generator`](skills/analogy-generator/) |
-| [Antonym Suggester](skills/antonym-suggester/) | [`skills/antonym-suggester`](skills/antonym-suggester/) |
-| [Auditory Discrimination Practice](skills/auditory-discrimination-practice/) | [`skills/auditory-discrimination-practice`](skills/auditory-discrimination-practice/) |
-| [Blend Identifier](skills/blend-identifier/) | [`skills/blend-identifier`](skills/blend-identifier/) |
-| [Capitalization Helper](skills/capitalization-helper/) | [`skills/capitalization-helper`](skills/capitalization-helper/) |
-| [Cause/Effect Sentence Starter](skills/cause-effect-sentence-starter/) | [`skills/cause-effect-sentence-starter`](skills/cause-effect-sentence-starter/) |
-| [Character Trait Lister](skills/character-trait-lister/) | [`skills/character-trait-lister`](skills/character-trait-lister/) |
-| [Choral-Reading Text Selector](skills/choral-reading-text-selector/) | [`skills/choral-reading-text-selector`](skills/choral-reading-text-selector/) |
-| [Cloze Passage Generator](skills/cloze-passage-generator/) | [`skills/cloze-passage-generator`](skills/cloze-passage-generator/) |
-| [Code-Snippet Explainer](skills/code-snippet-explainer/) | [`skills/code-snippet-explainer`](skills/code-snippet-explainer/) |
-| [Compare/Contrast Word Pairer](skills/compare-contrast-word-pairer/) | [`skills/compare-contrast-word-pairer`](skills/compare-contrast-word-pairer/) |
-| [Compound-Word Splitter](skills/compound-word-splitter/) | [`skills/compound-word-splitter`](skills/compound-word-splitter/) |
-| [Contraction Tool](skills/contraction-tool/) | [`skills/contraction-tool`](skills/contraction-tool/) |
-| [Crossword Clue Generator](skills/crossword-clue-generator/) | [`skills/crossword-clue-generator`](skills/crossword-clue-generator/) |
-| [CVC Word Creator](skills/cvc-word-creator/) | [`skills/cvc-word-creator`](skills/cvc-word-creator/) |
-| [Debate Topic Generator](skills/debate-topic-generator/) | [`skills/debate-topic-generator`](skills/debate-topic-generator/) |
-| [Definition Lookup](skills/definition-lookup/) | [`skills/definition-lookup`](skills/definition-lookup/) |
-| [Echo-Reading Prompter](skills/echo-reading-prompter/) | [`skills/echo-reading-prompter`](skills/echo-reading-prompter/) |
-| [Elkonin Box Assistant](skills/elkonin-box-assistant/) | [`skills/elkonin-box-assistant`](skills/elkonin-box-assistant/) |
-| [Essay Outline Generator](skills/essay-outline-generator/) | [`skills/essay-outline-generator`](skills/essay-outline-generator/) |
-| [Fact/Opinion Sorter](skills/fact-opinion-sorter/) | [`skills/fact-opinion-sorter`](skills/fact-opinion-sorter/) |
-| [Figurative Language Identifier](skills/figurative-language-identifier/) | [`skills/figurative-language-identifier`](skills/figurative-language-identifier/) |
-| [Fill-In-The-Blanks Generator](skills/fill-in-the-blanks-generator/) | [`skills/fill-in-the-blanks-generator`](skills/fill-in-the-blanks-generator/) |
-| [Final Sound Sorter](skills/final-sound-sorter/) | [`skills/final-sound-sorter`](skills/final-sound-sorter/) |
-| [High-Frequency Word Checker](skills/high-frequency-word-checker/) | [`skills/high-frequency-word-checker`](skills/high-frequency-word-checker/) |
-| [Historical-Event Explainer](skills/historical-event-explainer/) | [`skills/historical-event-explainer`](skills/historical-event-explainer/) |
-| [Homograph Helper](skills/homograph-helper/) | [`skills/homograph-helper`](skills/homograph-helper/) |
-| [Homophone Helper](skills/homophone-helper/) | [`skills/homophone-helper`](skills/homophone-helper/) |
-| [Initial Sound Sorter](skills/initial-sound-sorter/) | [`skills/initial-sound-sorter`](skills/initial-sound-sorter/) |
-| [Language-Experience Story Starter](skills/language-experience-story-starter/) | [`skills/language-experience-story-starter`](skills/language-experience-story-starter/) |
-| [Learning-Plan Outline Creator](skills/learning-plan-outline-creator/) | [`skills/learning-plan-outline-creator`](skills/learning-plan-outline-creator/) |
-| [Letter-Sound Matcher](skills/letter-sound-matcher/) | [`skills/letter-sound-matcher`](skills/letter-sound-matcher/) |
-| [Literacy-Game Idea Suggester](skills/literacy-game-idea-suggester/) | [`skills/literacy-game-idea-suggester`](skills/literacy-game-idea-suggester/) |
-| [Math Word-Problem Explainer](skills/math-word-problem-explainer/) | [`skills/math-word-problem-explainer`](skills/math-word-problem-explainer/) |
-| [Minimal Pairs Generator](skills/minimal-pairs-generator/) | [`skills/minimal-pairs-generator`](skills/minimal-pairs-generator/) |
-| [Missing Letter Finder](skills/missing-letter-finder/) | [`skills/missing-letter-finder`](skills/missing-letter-finder/) |
-| [Multiple-Choice Quiz Generator](skills/multiple-choice-quiz-generator/) | [`skills/multiple-choice-quiz-generator`](skills/multiple-choice-quiz-generator/) |
-| [Noun Finder](skills/noun-finder/) | [`skills/noun-finder`](skills/noun-finder/) |
-| [Onset-Rime Splitter](skills/onset-rime-splitter/) | [`skills/onset-rime-splitter`](skills/onset-rime-splitter/) |
-| [Open/Closed Syllable Identifier](skills/open-closed-syllable-identifier/) | [`skills/open-closed-syllable-identifier`](skills/open-closed-syllable-identifier/) |
-| [Past-Tense Verb Converter](skills/past-tense-verb-converter/) | [`skills/past-tense-verb-converter`](skills/past-tense-verb-converter/) |
-| [Phoneme Blending Practice](skills/phoneme-blending-practice/) | [`skills/phoneme-blending-practice`](skills/phoneme-blending-practice/) |
-| [Phoneme Segmentation Practice](skills/phoneme-segmentation-practice/) | [`skills/phoneme-segmentation-practice`](skills/phoneme-segmentation-practice/) |
-| [Phonics Joke Generator](skills/joke-generator-phonics-based/) | [`skills/joke-generator-phonics-based`](skills/joke-generator-phonics-based/) |
-| [Phonics Story Editor](skills/phonics-story-editor/) | [`skills/phonics-story-editor`](skills/phonics-story-editor/) |
-| [Plural Noun Generator](skills/plural-noun-generator/) | [`skills/plural-noun-generator`](skills/plural-noun-generator/) |
-| [Predictable Text Generator](skills/predictable-text-generator/) | [`skills/predictable-text-generator`](skills/predictable-text-generator/) |
-| [Prefix/Suffix Identifier](skills/prefix-suffix-identifier/) | [`skills/prefix-suffix-identifier`](skills/prefix-suffix-identifier/) |
-| [Progress-Monitoring Note Taker](skills/progress-monitoring-note-taker/) | [`skills/progress-monitoring-note-taker`](skills/progress-monitoring-note-taker/) |
-| [Pronunciation Guide](skills/pronunciation-guide/) | [`skills/pronunciation-guide`](skills/pronunciation-guide/) |
-| [Punctuation Placer](skills/punctuation-placer/) | [`skills/punctuation-placer`](skills/punctuation-placer/) |
-| [R-controlled Vowel Spotter](skills/r-controlled-vowel-spotter/) | [`skills/r-controlled-vowel-spotter`](skills/r-controlled-vowel-spotter/) |
-| [Read-Aloud Text Player](skills/read-aloud-text-player/) | [`skills/read-aloud-text-player`](skills/read-aloud-text-player/) |
-| [Reading Fluency Timer](skills/reading-fluency-timer/) | [`skills/reading-fluency-timer`](skills/reading-fluency-timer/) |
-| [Rhyming Words Generator](skills/rhyming-words-generator/) | [`skills/rhyming-words-generator`](skills/rhyming-words-generator/) |
-| [Root Word Extractor](skills/root-word-extractor/) | [`skills/root-word-extractor`](skills/root-word-extractor/) |
-| [Science-Concept Explainer](skills/science-concept-explainer/) | [`skills/science-concept-explainer`](skills/science-concept-explainer/) |
-| [Sentence Complexity Scorer](skills/sentence-complexity-scorer/) | [`skills/sentence-complexity-scorer`](skills/sentence-complexity-scorer/) |
-| [Sentence Fragment Detector](skills/sentence-fragment-detector/) | [`skills/sentence-fragment-detector`](skills/sentence-fragment-detector/) |
-| [Sentence Unscrambler](skills/sentence-unscrambler/) | [`skills/sentence-unscrambler`](skills/sentence-unscrambler/) |
-| [Setting Describer Ideas](skills/setting-describer-ideas/) | [`skills/setting-describer-ideas`](skills/setting-describer-ideas/) |
-| [Sight-Word Flashcard Maker](skills/sight-word-flashcard-maker/) | [`skills/sight-word-flashcard-maker`](skills/sight-word-flashcard-maker/) |
-| [Silent-Letter Highlighter](skills/silent-letter-highlighter/) | [`skills/silent-letter-highlighter`](skills/silent-letter-highlighter/) |
-| [Simplified Text Rewriter](skills/simplified-text-rewriter/) | [`skills/simplified-text-rewriter`](skills/simplified-text-rewriter/) |
-| [Sound Wall Categorizer](skills/sound-wall-categorizer/) | [`skills/sound-wall-categorizer`](skills/sound-wall-categorizer/) |
-| [Spelling-Bee Practice List](skills/spelling-bee-practice-list/) | [`skills/spelling-bee-practice-list`](skills/spelling-bee-practice-list/) |
-| [Story Sequence Suggester](skills/story-sequence-suggester/) | [`skills/story-sequence-suggester`](skills/story-sequence-suggester/) |
-| [Synonym Suggester](skills/synonym-suggester/) | [`skills/synonym-suggester`](skills/synonym-suggester/) |
-| [Text Summarizer](skills/text-summarizer/) | [`skills/text-summarizer`](skills/text-summarizer/) |
-| [Tongue-Twister Creator](skills/tongue-twister-creator/) | [`skills/tongue-twister-creator`](skills/tongue-twister-creator/) |
-| [Trigraph Detector](skills/trigraph-detector/) | [`skills/trigraph-detector`](skills/trigraph-detector/) |
-| [Verb Spotter](skills/verb-spotter/) | [`skills/verb-spotter`](skills/verb-spotter/) |
-| [Vocabulary Enhancer](skills/vocabulary-enhancer/) | [`skills/vocabulary-enhancer`](skills/vocabulary-enhancer/) |
-| [Vocabulary Tier Sorter](skills/vocabulary-tier-sorter/) | [`skills/vocabulary-tier-sorter`](skills/vocabulary-tier-sorter/) |
-| [Vowel Sound Categorizer](skills/vowel-sound-categorizer/) | [`skills/vowel-sound-categorizer`](skills/vowel-sound-categorizer/) |
-| [Vowel Team Finder](skills/vowel-team-finder/) | [`skills/vowel-team-finder`](skills/vowel-team-finder/) |
-| [Word Family Builder](skills/word-family-builder/) | [`skills/word-family-builder`](skills/word-family-builder/) |
-| [Word-Chain Game Starter](skills/word-chain-game-starter/) | [`skills/word-chain-game-starter`](skills/word-chain-game-starter/) |
-| [Word-Ladder Creator](skills/word-ladder-creator/) | [`skills/word-ladder-creator`](skills/word-ladder-creator/) |
-| [Word-Search Puzzle Maker](skills/word-search-puzzle-maker/) | [`skills/word-search-puzzle-maker`](skills/word-search-puzzle-maker/) |
-| [Word-Shape Puzzle Generator](skills/word-shape-puzzle-generator/) | [`skills/word-shape-puzzle-generator`](skills/word-shape-puzzle-generator/) |
+## Library
+
+<!-- library:start (generated by scripts/build_index.py; edit library.json) -->
+
+**103 skills.** 6 run on omo.space today; the other 97 are open specs you can implement yourself.
+
+**Jump to:** [Phonics and word study](#phonics-and-word-study) (30) · [Reading and fluency](#reading-and-fluency) (11) · [Grammar and vocabulary](#grammar-and-vocabulary) (24) · [Writing](#writing) (9) · [Worksheets, quizzes and puzzles](#worksheets-quizzes-and-puzzles) (9) · [Games and activities](#games-and-activities) (5) · [Planning and assessment](#planning-and-assessment) (2) · [Subject explainers](#subject-explainers) (4) · [Books and media](#books-and-media) (5) · [Business and marketing](#business-and-marketing) (2) · [Builder tools](#builder-tools) (2)
+
+### Phonics and word study
+
+Sounds, patterns, word lists and decoding.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Phonics Worksheet Generator](skills/phonics-worksheet-generator/) | Create a print-ready phonics worksheet and answer key from a bounded teaching brief. | [Run on Omo](https://omo.space/run?slug=phonics-worksheet-generator) |
+| [Blend Identifier](skills/blend-identifier/) | Find consonant blends (bl, st, spr) in words or text, with examples. | Spec only |
+| [Compound-Word Splitter](skills/compound-word-splitter/) | Split compound words into their parts and explain the meaning. | Spec only |
+| [CVC Word Creator](skills/cvc-word-creator/) | Make a controlled list of consonant-vowel-consonant words for a target vowel. | Spec only |
+| [Decodable Sentence Creator](skills/decodable-sentence-creator/) | Create child-safe sentences constrained by your target phonics patterns, length, dialect, and sight words. | Spec only |
+| [Digraph Spotter](skills/digraph-spotter/) | Find consonant and vowel digraphs in a passage and see exactly where each one appears. | Spec only |
+| [Elkonin Box Assistant](skills/elkonin-box-assistant/) | Break words into sound boxes (Elkonin boxes) for segmenting practice. | Spec only |
+| [Final Sound Sorter](skills/final-sound-sorter/) | Group words by their final sound. | Spec only |
+| [Grapheme to Phoneme Converter](skills/grapheme-to-phoneme-converter/) | Map an English grapheme or word to likely phonemes for the dialect you choose. | Spec only |
+| [High-Frequency Word Checker](skills/high-frequency-word-checker/) | Mark the high-frequency (sight) words in a text and report coverage. | Spec only |
+| [Initial Sound Sorter](skills/initial-sound-sorter/) | Group words by their first sound. | Spec only |
+| [Letter-Sound Matcher](skills/letter-sound-matcher/) | Match letters to their common sounds, with example words. | Spec only |
+| [Minimal Pairs Generator](skills/minimal-pairs-generator/) | Make minimal pairs (ship/sip) for a sound contrast. | Spec only |
+| [Missing Letter Finder](skills/missing-letter-finder/) | Make missing-letter puzzles from a word list, with answers. | Spec only |
+| [Onset-Rime Splitter](skills/onset-rime-splitter/) | Split words into onset and rime (c + at), with a short explanation. | Spec only |
+| [Open/Closed Syllable Identifier](skills/open-closed-syllable-identifier/) | Split words into syllables and label each syllable open or closed. | Spec only |
+| [Phoneme Blending Practice](skills/phoneme-blending-practice/) | Make blending drills: say the sounds, then reveal the word. | Spec only |
+| [Phoneme Counter](skills/phoneme-counter/) | Estimate the phonemes in an English word, with an optional transcription and clear uncertainty notes. | Spec only |
+| [Phoneme Segmentation Practice](skills/phoneme-segmentation-practice/) | Make segmenting drills: show the word, then reveal its sounds. | Spec only |
+| [Phonics Rule Explainer](skills/phonics-rule-explainer/) | Explain one English phonics pattern with level-appropriate examples, exceptions, and uncertainty notes. | Spec only |
+| [Phonics Word List Generator](skills/phonics-list-generator/) | Build a dialect-aware phonics word list around the target patterns, topic, and learner level you choose. | Spec only |
+| [R-controlled Vowel Spotter](skills/r-controlled-vowel-spotter/) | Find r-controlled vowels (ar, er, ir, or, ur) in words or text. | Spec only |
+| [Rhyming Words Generator](skills/rhyming-words-generator/) | List rhyming words for a word or word family. | Spec only |
+| [Silent-Letter Highlighter](skills/silent-letter-highlighter/) | Mark silent letters in words or text. | Spec only |
+| [Sound Wall Categorizer](skills/sound-wall-categorizer/) | Place sounds on a sound wall by category, with example words. | Spec only |
+| [Syllable Splitter and Counter](skills/syllable-splitter-and-counter/) | Split a word list into syllables and counts, with dialect differences and uncertain cases made clear. | Spec only |
+| [Trigraph Detector](skills/trigraph-detector/) | Find trigraphs (tch, igh, dge) in words or text. | Spec only |
+| [Vowel Sound Categorizer](skills/vowel-sound-categorizer/) | Group words by vowel sound (short, long, other), with examples. | Spec only |
+| [Vowel Team Finder](skills/vowel-team-finder/) | Find vowel teams (ai, ee, oa) in words or text, with sound notes. | Spec only |
+| [Word Family Builder](skills/word-family-builder/) | Build a word family around a rime (-at, -ig), with meanings and sentences. | Spec only |
+
+### Reading and fluency
+
+Read-aloud, fluency and comprehension practice.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Auditory Discrimination Practice](skills/auditory-discrimination-practice/) | Make same/different word pairs for listening practice (text only, no audio). | Spec only |
+| [Choral-Reading Text Selector](skills/choral-reading-text-selector/) | Suggest short texts suited to choral reading, with the reason for each. | Spec only |
+| [Echo-Reading Prompter](skills/echo-reading-prompter/) | Make echo-reading prompts: a teacher line, then the student repeat. | Spec only |
+| [Fact/Opinion Sorter](skills/fact-opinion-sorter/) | Sort statements into fact or opinion, with the clue for each. | Spec only |
+| [Language-Experience Story Starter](skills/language-experience-story-starter/) | Turn a shared class experience into a starter text, with teacher tips. | Spec only |
+| [Phonics Reading Error Coach](skills/phonics-reading-error-coach/) | Compare an attempted word with its target and get a cautious phonics hypothesis plus practice ideas. | Spec only |
+| [Predictable Text Generator](skills/predictable-text-generator/) | Write a short repetitive, predictable text for early readers. | Spec only |
+| [Pronunciation Guide](skills/pronunciation-guide/) | Give a pronunciation respelling and syllable break for a word (text only, no audio). | Spec only |
+| [Read-Aloud Text Player](skills/read-aloud-text-player/) | Prepare a read-aloud script with pacing and pause marks (text only, no audio). | Spec only |
+| [Reading Fluency Timer](skills/reading-fluency-timer/) | Prepare a timed fluency passage with instructions and a words-per-minute target. | Spec only |
+| [Story Sequence Suggester](skills/story-sequence-suggester/) | Put story events in order and explain the sequence. | Spec only |
+
+### Grammar and vocabulary
+
+Parts of speech, mechanics and word meaning.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Adjective Identifier](skills/adjective-identifier/) | Mark the adjectives in a passage and say which noun each one describes. | Spec only |
+| [Alphabetical Order Checker](skills/alphabetical-order-checker/) | Check whether a word list is in alphabetical order and give the corrected order. | Spec only |
+| [Analogy Completer](skills/analogy-completer/) | Complete word analogies (hot : cold :: up : ?) and explain each answer. | Spec only |
+| [Analogy Generator](skills/analogy-generator/) | Make a set of word analogies at a chosen level, with an answer key. | Spec only |
+| [Antonym Suggester](skills/antonym-suggester/) | Suggest antonyms for a word, levelled for the learner, with example sentences. | Spec only |
+| [Capitalization Helper](skills/capitalization-helper/) | Fix capital letters in a passage and give the reason for each change. | Spec only |
+| [Contraction Tool](skills/contraction-tool/) | Expand contractions or form them, with the rule for each. | Spec only |
+| [Definition Lookup](skills/definition-lookup/) | Give a child-friendly definition and an example sentence for a word. | Spec only |
+| [Figurative Language Identifier](skills/figurative-language-identifier/) | Find similes, metaphors and idioms in a passage and label each one. | Spec only |
+| [Homograph Helper](skills/homograph-helper/) | Show the meanings and pronunciations of homographs (read/read), with examples. | Spec only |
+| [Homophone Helper](skills/homophone-helper/) | Explain homophones (there/their/they're) with meanings and examples. | Spec only |
+| [Noun Finder](skills/noun-finder/) | Mark the nouns in a passage and list them by type. | Spec only |
+| [Past-Tense Verb Converter](skills/past-tense-verb-converter/) | Change verbs to past tense and give the rule, including irregular forms. | Spec only |
+| [Plural Noun Generator](skills/plural-noun-generator/) | Form plurals and explain the rule, including irregular nouns. | Spec only |
+| [Prefix/Suffix Identifier](skills/prefix-suffix-identifier/) | Mark prefixes and suffixes in words and give their meanings. | Spec only |
+| [Punctuation Placer](skills/punctuation-placer/) | Add missing punctuation to a sentence and explain each mark. | Spec only |
+| [Root Word Extractor](skills/root-word-extractor/) | Find the root word and affixes in a word, with meanings. | Spec only |
+| [Sentence Complexity Scorer](skills/sentence-complexity-scorer/) | Score how complex a sentence is and give the reasons. | Spec only |
+| [Sentence Fragment Detector](skills/sentence-fragment-detector/) | Flag sentence fragments and run-ons, with a fix for each. | Spec only |
+| [Simplified Text Rewriter](skills/simplified-text-rewriter/) | Rewrite a passage at a lower reading level and keep the meaning. | Spec only |
+| [Synonym Suggester](skills/synonym-suggester/) | Suggest synonyms for a word, levelled for the learner, with examples. | Spec only |
+| [Verb Spotter](skills/verb-spotter/) | Mark the verbs in a passage and label their type. | Spec only |
+| [Vocabulary Enhancer](skills/vocabulary-enhancer/) | Suggest stronger word choices for a piece of writing, at the writer's level. | Spec only |
+| [Vocabulary Tier Sorter](skills/vocabulary-tier-sorter/) | Sort words into vocabulary tiers 1, 2 and 3, with short definitions. | Spec only |
+
+### Writing
+
+Prompts, outlines and story starters.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Acrostic Poem Assistant](skills/acrostic-poem-assistant/) | Draft an acrostic poem from a word or name, with line ideas a student can edit. | Spec only |
+| [Cause/Effect Sentence Starter](skills/cause-effect-sentence-starter/) | Give cause-and-effect sentence starters for a topic or text. | Spec only |
+| [Character Trait Lister](skills/character-trait-lister/) | List a character's traits with evidence from the text you supply. | Spec only |
+| [Compare/Contrast Word Pairer](skills/compare-contrast-word-pairer/) | Give compare/contrast transition words in pairs, with usage notes. | Spec only |
+| [Debate Topic Generator](skills/debate-topic-generator/) | Suggest debate topics matched to age and complexity. | Spec only |
+| [Essay Outline Generator](skills/essay-outline-generator/) | Build a paragraph-by-paragraph outline for an essay topic. | Spec only |
+| [Setting Describer Ideas](skills/setting-describer-ideas/) | Give sensory detail ideas to describe a story setting. | Spec only |
+| [Story Idea Generator](skills/story-idea-generator/) | Generate original, child-safe story ideas around the genre, setting, and cast you choose. | Spec only |
+| [Text Summarizer](skills/text-summarizer/) | Summarise a passage to a set length. | Spec only |
+
+### Worksheets, quizzes and puzzles
+
+Printable practice and answer keys.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Cloze Passage Generator](skills/cloze-passage-generator/) | Turn a passage into a cloze exercise with a word bank and answer key. | Spec only |
+| [Crossword Clue Generator](skills/crossword-clue-generator/) | Write crossword clues for a word list, with answer lengths. | Spec only |
+| [Fill-In-The-Blanks Generator](skills/fill-in-the-blanks-generator/) | Make a fill-in-the-blanks exercise from a passage, with an answer key. | Spec only |
+| [Multiple-Choice Quiz Generator](skills/multiple-choice-quiz-generator/) | Write multiple-choice questions on a text or topic, with an answer key. | Spec only |
+| [Sentence Unscrambler](skills/sentence-unscrambler/) | Make scrambled-sentence puzzles with answers. | Spec only |
+| [Sight-Word Flashcard Maker](skills/sight-word-flashcard-maker/) | Plan sight-word flashcards: the word, a sentence and a picture idea. | Spec only |
+| [Spelling-Bee Practice List](skills/spelling-bee-practice-list/) | Make a levelled spelling list with a context sentence for each word. | Spec only |
+| [Word-Search Puzzle Maker](skills/word-search-puzzle-maker/) | Plan a word-search puzzle: the word list and the grid layout. | Spec only |
+| [Word-Shape Puzzle Generator](skills/word-shape-puzzle-generator/) | Make word-shape (configuration) puzzles with answers. | Spec only |
+
+### Games and activities
+
+Oral and playful literacy activities.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Literacy-Game Idea Suggester](skills/literacy-game-idea-suggester/) | Suggest literacy games for a skill and group size, with simple rules. | Spec only |
+| [Phonics Joke Generator](skills/joke-generator-phonics-based/) | Write child-safe jokes and riddles that practise a phonics pattern. | Spec only |
+| [Tongue-Twister Creator](skills/tongue-twister-creator/) | Write tongue twisters that practise a target sound. | Spec only |
+| [Word-Chain Game Starter](skills/word-chain-game-starter/) | Start a word-chain game and list valid next words. | Spec only |
+| [Word-Ladder Creator](skills/word-ladder-creator/) | Make a word ladder that changes one letter per step, with an answer key. | Spec only |
+
+### Planning and assessment
+
+Teacher planning and progress notes.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Learning-Plan Outline Creator](skills/learning-plan-outline-creator/) | Outline a sequenced learning plan for a topic and time frame. | Spec only |
+| [Progress-Monitoring Note Taker](skills/progress-monitoring-note-taker/) | Turn quick observations into a structured progress note for a learner. | Spec only |
+
+### Subject explainers
+
+Maths, science, history and code explanations.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Code-Snippet Explainer](skills/code-snippet-explainer/) | Explain a short code snippet line by line at the learner's level. | Spec only |
+| [Historical-Event Explainer](skills/historical-event-explainer/) | Explain a historical event at the learner's level. | Spec only |
+| [Math Word-Problem Explainer](skills/math-word-problem-explainer/) | Explain how to solve a maths word problem step by step. | Spec only |
+| [Science-Concept Explainer](skills/science-concept-explainer/) | Explain a science concept at the learner's level, with an example. | Spec only |
+
+### Books and media
+
+Generated books, story editing and video.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Japanese Style Story Video](skills/japanese-style-story-video/) | Turn short audio into a vertical sumi-e drawing animation. | [Run on Omo](https://omo.space/run?slug=japanese-style-story-video) |
+| [Woven Relationship Book Maker](skills/woven-relationship-book-maker/) | Turn your love story into a beautiful keepsake book. | [Run on Omo](https://omo.space/run?slug=woven-relationship-book-maker) |
+| [Decodable Book Maker](skills/decodable-book-maker/) | Write a decodable phonics story for one phonics stage and deliver it as a PDF book. | Spec only |
+| [Phonics Story Edit Studio](skills/phonics-story-edit-studio/) | Apply text, layout, highlighting or title changes to a PhonicsMaker story and get a new versioned PDF. | Spec only |
+| [Phonics Story Editor](skills/phonics-story-editor/) | Edit an existing story with plain commands and get a new PDF version. | Spec only |
+
+### Business and marketing
+
+Ad copy and customer feedback analysis.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Customer Feedback Theme Finder](skills/customer-feedback-theme-finder/) | Turn raw customer comments into faithful themes and practical next actions. | [Run on Omo](https://omo.space/run?slug=customer-feedback-theme-finder) |
+| [Facebook Ads Copywriter](skills/facebook-ads-copywriter/) | Turn verified product facts into three launch-ready Facebook ad variants. | [Run on Omo](https://omo.space/run?slug=facebook-ads-copywriter) |
+
+### Builder tools
+
+Tools for people who build and host skills.
+
+| Skill | What it does | Run |
+| --- | --- | --- |
+| [Skill.md to Hosted Workflow](skills/skill-md-to-hosted-workflow/) | Compile a SKILL.md into a fixture-tested, canonically priced hosting candidate. | [Run on Omo](https://omo.space/run?slug=skill-md-to-hosted-workflow) |
+| [Label Normalizer Canary](skills/label-normalizer-canary/) | Deterministic test skill used to prove the hosting pipeline end to end. Not a teaching tool. | Spec only |
+
+<!-- library:end -->
+
+## Repository layout
+
+```
+skills/<slug>/SKILL.md       the contract (frontmatter: name, description)
+skills/<slug>/README.md      a short human page for the skill
+skills/<slug>/manifest.json  version, hosted price, SHA-256 of SKILL.md (published releases)
+library.json                 category, status and one-line summary for each skill
+scripts/build_index.py       rebuilds the Library section above from library.json
+scripts/validate.py          checks folders, frontmatter, manifests, links and the index
+```
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the conventions for improving an
-existing skill or adding a new one. Omo Skills are first-party workflows and
-should use original, reviewed content with clear safety boundaries.
+See [CONTRIBUTING.md](CONTRIBUTING.md). In short: one skill per folder, the
+folder name equals the `name` in the frontmatter, add the skill to
+`library.json`, then run `python3 scripts/build_index.py` and
+`python3 scripts/validate.py`. CI runs the same check on every pull request.
+
+Questions or a skill you want added? [Open an issue](https://github.com/omo-space/skills/issues).
 
 ## License
 
-The library is released under the [MIT License](LICENSE).
+[MIT](LICENSE). See [POLICY.md](POLICY.md) for what Omo publishes here.
